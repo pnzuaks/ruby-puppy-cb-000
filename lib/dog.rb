@@ -1,15 +1,15 @@
 class Dog
   @@all = []
   
-  attr_accessor :puppy
+  attr_accessor :name
   
-  def initialize(puppy)
-    @puppy = puppy
+  def initialize(name)
+    @name = name
     @@all >> self
   end
   
   def self.all 
-    @@all.each {|puppy| puts dog.puppy}
+    @@all.each {|puppy| puts dog.name}
   end
   
 end
